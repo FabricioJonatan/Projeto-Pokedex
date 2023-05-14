@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/scrollbar.css">
+    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="shortcut icon" href="./src/imagens/favicon" type="image/x-icon">
+    <title>Projeto Pokedéx</title>
+</head>
+<body>
+    <header>
+        <a href="#">
+            <img src="./src/imagens/pokeball.png" alt="PokeBola" class="home">
+        </a>
+        <button id="themeButton">
+            <img src="./src/imagens/sun.png" alt="Botão de mudar tema" class="imgButton">
+        </button>
+    </header>
+    <main>
+        <ul class="pokedex">
+            <li class="card">
+                <div class="info">
+                    <span>Bulbasaur</span>
+                    <span>#001</span>
+                </div>
+                <img src="src/imagens/bulbasaur.gif" alt="bulbasaur" class="gif">
+                <ul class="types">
+                    <li class="type" id="planta">Planta</li>
+                    <li class="type" id="veneno">Veneno</li>
+                </ul>
+                <p>
+                    <strong>Descrição : </strong>
+                    Ele possui uma semente em suas costas desde seu nascimento, que cresce lentamente.
+                </p>
+            </li>
+            <li class="card">
+                <div class="info">
+                    <span>Ivysaur</span>
+                    <span>#002</span>
+                </div>
+                <img src="src/imagens/ivysaur.gif" alt="ivysaur" class="gif">
+                <ul class="types">
+                    <li class="type" id="planta">Planta</li>
+                    <li class="type" id="veneno">Veneno</li>
+                </ul>
+                <p>
+                    <strong>Descrição : </strong>
+                    Quando o bulbo em suas costas se torna maior, ele parece perder a habilidade de se equilibrar nas patas traseiras.
+                </p>
+            </li>
+            <li class="card">
+                <div class="info">
+                    <span>Venusaur</span>
+                    <span>#003</span>
+                </div>
+                <img src="src/imagens/venusaur.gif" alt="venusaur" class="gif">
+                <ul class="types">
+                    <li class="type" id="planta">Planta</li>
+                    <li class="type" id="veneno">Veneno</li>
+                </ul>
+                <p>
+                    <strong>Descrição : </strong>
+                    A flor de suas costas desabrocha quando absorve a luz do sol, o fazendo continuar procurando essa luz.
+                </p>
+            </li>
+            <li class="card">
+                <div class="info">
+                    <span>Charmander</span>
+                    <span>#004</span>
+                </div>
+                <img src="src/imagens/charmander.gif" alt="charmander" class="gif">
+                <ul class="types">
+                    <li class="type" id="fogo">Fogo</li>
+                </ul>
+                <p>
+                    <strong>Descrição : </strong>
+                    Possui preferência por coisas quentes, quando chove, procura abrigo para poder proteger a ponta de sua cauda.
+                </p>
+            </li>
+            <li class="card">
+                <div class="info">
+                    <span>Charmeleon</span>
+                    <span>#005</span>
+                </div>
+                <img src="src/imagens/charmeleon.gif" alt="charmeleon" class="gif">
+                <ul class="types">
+                    <li class="type" id="fogo">Fogo</li>
+                </ul>
+                <p>
+                    <strong>Descrição : </strong>
+                    Possui natureza hostil, quando em batalha costuma chicotear com sua longa calda e arranhar com suas garras afiadas.
+                </p>
+            </li>
+            <li class="card">
+                <div class="info">
+                    <span>Charizard</span>
+                    <span>#006</span>
+                </div>
+                <img src="src/imagens/charizard.gif" alt="charizard" class="gif">
+                <ul class="types">
+                    <li class="type" id="fogo">Fogo</li>
+                    <li class="type" id="voador">Voador</li>
+                </ul>
+                <p>
+                    <strong>Descrição : </strong>
+                    Bafora labaredas de chamas extremamente quentes que podem derreter pedregulhos e incendiar florestas.
+                </p>
+            </li>
+            <li class="card">
+                <div class="info">
+                    <span>Squirtle</span>
+                    <span>#007</span>
+                </div>
+                <img src="src/imagens/squirtle.gif" alt="squirtle" class="gif">
+                <ul class="types">
+                    <li class="type" id="agua">Água</li>
+                </ul>
+                <p>
+                    <strong>Descrição : </strong>
+                    Quando se retrai em sua dura concha, ele esquicha vigorosos jatos de água.
+                </p>
+            </li>
+            <li class="card">
+                <div class="info">
+                    <span>Wartortle</span>
+                    <span>#008</span>
+                </div>
+                <img src="src/imagens/wartortle.gif" alt="wartortle" class="gif">
+                <ul class="types">
+                    <li class="type" id="agua">Água</li>
+                </ul>
+                <p>
+                    <strong>Descrição : </strong>
+                    São símbolos de longevidade, se houver algas em seu casco significa que este pokemon é muito velho.
+                </p>
+            </li>
+            <li class="card">
+                <div class="info">
+                    <span>Blastoise</span>
+                    <span>#009</span>
+                </div>
+                <img src="src/imagens/blastoise.gif" alt="blastoise" class="gif">
+                <ul class="types">
+                    <li class="type" id="agua">Água</li>
+                </ul>
+                <p>
+                    <strong>Descrição : </strong>
+                    Tende a usar seu peso para esmagar seus predadores, se sentir assustado se esconderá dentro de seu casco.
+                </p>
+            </li>
+            <li class="card">
+                <div class="info">
+                    <span>Caterpie</span>
+                    <span>#010</span>
+                </div>
+                <img src="src/imagens/caterpie.gif" alt="caterpie" class="gif">
+                <ul class="types">
+                    <li class="type" id="inseto">Inseto</li>
+                </ul>
+                <p>
+                    <strong>Descrição : </strong>
+                    Para se proteger de predadores, exala um odor horrível de suas antenas.
+                </p>
+            </li>
+            <li class="card">
+                <div class="info">
+                    <span>Metapod</span>
+                    <span>#011</span>
+                </div>
+                <img src="src/imagens/metapod.gif" alt="metapod" class="gif">
+                <ul class="types">
+                    <li class="type" id="inseto">Inseto</li>
+                </ul>
+                <p>
+                    <strong>Descrição : </strong>
+                    Este pokemon apenas espera evolui, quando está nesta fase ele apenas consegue ficar mais resistente, e não se move muito.
+                </p>
+            </li>
+            <li class="card">
+                <div class="info">
+                    <span>ButterFree</span>
+                    <span>#012</span>
+                </div>
+                <img src="src/imagens/butterfree.gif" alt="butterfree" class="gif">
+                <ul class="types">
+                    <li class="type" id="inseto">Inseto</li>
+                    <li class="type" id="voador">Voador</li>
+                </ul>
+                <p>
+                    <strong>Descrição : </strong>
+                    Em batalha ele(a) bate suas asas com força espalhando um pólem tóxico.
+                </p>
+            </li>
+            <li class="card">
+                <div class="info">
+                    <span>Weedle</span>
+                    <span>#013</span>
+                </div>
+                <img src="src/imagens/weedle.gif" alt="weedle" class="gif">
+                <ul class="types">
+                    <li class="type" id="inseto">Inseto</li>
+                    <li class="type" id="veneno">Veneno</li>
+                </ul>
+                <p>
+                    <strong>Descrição : </strong>
+                    Tome cuidado com o ferrão em sua cabeça, ele se esconde no meio das gramas onde ele come folhas.
+                </p>
+            </li>
+            <li class="card">
+                <div class="info">
+                    <span>Kakuna</span>
+                    <span>#014</span>
+                </div>
+                <img src="src/imagens/kakuna.gif" alt="kakuna" class="gif">
+                <ul class="types">
+                    <li class="type" id="inseto">Inseto</li>
+                    <li class="type" id="veneno">Veneno</li>
+                </ul>
+                <p>
+                    <strong>Descrição : </strong>
+                    Capaz de se mover apenas ligeiramente. Quando em perigo, pode mostrar seu ferrão e envenenar seu inimigo.
+                </p>
+            </li>
+            <li class="card">
+                <div class="info">
+                    <span>Beedrill</span>
+                    <span>#015</span>
+                </div>
+                <img src="src/imagens/beedrill.gif" alt="beedrill" class="gif">
+                <ul class="types">
+                    <li class="type" id="inseto">Inseto</li>
+                    <li class="type" id="veneno">Veneno</li>
+                </ul>
+                <p>
+                    <strong>Descrição : </strong>
+                    Tem três ferrões venenosos nas patas dianteiras e na cauda. Eles são usados ​​para espetar seu inimigo repetidamente.
+                </p>
+            </li>
+        </ul>
+    </main>
+    <script src="./src/js/index.js"></script>
+</body>
+</html>

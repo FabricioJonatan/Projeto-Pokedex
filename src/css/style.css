@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;800&display=swap');
+
+body{
+    background-color: #d2d2d2;
+    color: #292929;
+    font-family: 'Poppins', sans-serif;
+
+    /* O corpo da página crescerá até um limite */
+    max-width: 1280px;
+    /* Conteúdo fica centraalizado e não fica margin acima ou abaixo da página */
+    margin: 0 auto;
+}
+
+body.darkMode{
+    /* Configuração que será posta no botão de mudar o tema */
+    background-color: #130c2b;
+    color: #e0e0e0;
+    transition: 0.3s ease-in-out;
+}
+
+header{
+    padding: 20px 150px;
+    /* Organiza os espaçamentos entre os elementos da flexbox */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+header .home,
+header .imgButton{
+    width: 40px;
+    
+    /* Faz a animação que aumenta os botões */
+    transition: 0.3s ease-in-out;
+}
+
+#themeButton{
+    /* Removendo os estilos padrão do botão */
+    background: none;
+    border: none;
+}
+
+header .home:hover,
+header .imgButton:hover{
+    /* Faz a animação que aumenta os botões */
+    transform: scale(1.1);
+
+    /* Faz com que o curso muda de formato ao estar em cima do botão */
+    cursor: pointer;
+}
+
+
+
+
+main{
+    padding: 25px;
+}
+
+.pokedex{
+    /* Espaçamento entre os cards dos pokemons e como eles ficarão organizados na pagina */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.card{
+    background-color: #d8e3ec;
+    width: 200px;
+    padding: 15px;
+    border-radius: 15px;
+
+    /* Espaçamento entre o conteúdo presente no card */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+
+    /* Animação quando o mouse estiver no card */
+    transition: 0.3s ease-in-out;
+}
+
+.darkMode .card{
+    background-color: #8a8a8a;
+}
+
+.card:hover{
+    transform: scale(1.09);
+    background-color: #96d9d6;
+    color: #292929;
+}
+
+
+.card .info{
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #333333;
+    border-radius: 10px;
+}
+
+.card .info span{
+    padding: 5px;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+.card .gif{
+    width: 70px;
+    height: 70px;
+}
+
+.card .types{
+    display: flex;
+    gap: 10px;
+}
+
+.card .type{
+    font-size: 15px;
+    padding: 8px;
+    border-radius: 10px;
+}
+
+.card p{
+    max-height: 80px;
+    overflow-y: scroll;
+    font-size: 14px;
+    padding-right: 10px;
+}
+
+/* TIPOS */
+#planta{
+    background-color: #7ac74c;
+}
+#veneno{
+    background-color: #df67ddfb;
+}
+#fogo{
+    background-color: #ee8130;
+}
+#agua{
+    background-color: #6390f0;
+}
+#voador{
+    background-image: linear-gradient(#cecaca 50%, #3dc7ef 50%);
+    color: #353535;
+}
+#inseto{
+    background-color: #a6b91a;
+}
